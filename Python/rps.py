@@ -15,15 +15,15 @@ def check_and_print(computer, user):
     elif computer == ALLOWED[0] and user == ALLOWED[1]:
         print(f"I chose rock. {GREEN}You win.{END}")
     elif computer == ALLOWED[0] and user == ALLOWED[2]:
-        print(f"I chose rock. {RED}I win.{END}")
+        print(f"I chose rock. {RED}You lose.{END}")
     elif computer == ALLOWED[1] and user == ALLOWED[0]:
-        print(f"I chose paper. {RED}I win.{END}")
+        print(f"I chose paper. {RED}You lose.{END}")
     elif computer == ALLOWED[1] and user == ALLOWED[2]:
         print(f"I chose paper. {GREEN}You win.{END}")
     elif computer == ALLOWED[2] and user == ALLOWED[0]:
         print(f"I chose scissors. {GREEN}You win.{END}")
     elif computer == ALLOWED[2] and user == ALLOWED[1]:
-        print(f"I chose scissors. {RED}I win.{END}")
+        print(f"I chose scissors. {RED}You lose.{END}")
 
 user_name = input("What is your name? ")
 print(f"Hello, {user_name}. Let's play a game!\n")
