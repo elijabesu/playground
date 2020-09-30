@@ -37,8 +37,7 @@ def main_convertor():
 
 def hex_convertor(h, e, x):
     r, g, b = hex_to_rgb(h, e, x)
-    c, m, y, k = rgb_to_cmyk(r, g, b)
-    build_and_print(r, g, b, c, m, y, k)
+    rgb_convertor(r, g, b)
 
 def rgb_convertor(r, g, b):
     c, m, y, k = rgb_to_cmyk(r, g, b)
