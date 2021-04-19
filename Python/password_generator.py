@@ -7,6 +7,7 @@ DIGITS = list(string.digits)
 PUNCTUATION = list(string.punctuation)
 NO = ["no", "false", "n", "f"]
 
+
 def get_length():
     length = input("How many characters should your password have? ")
     try:
@@ -14,6 +15,7 @@ def get_length():
     except ValueError:
         sys.exit("That is not a number.")
     return length
+
 
 def get_available_string():
     wanted = list()
@@ -35,12 +37,14 @@ def get_available_string():
 
     return wanted
 
+
 def create_password():
     length = get_length()
     wanted = get_available_string()
 
-    password = "".join(random.choices(wanted, k = length))
+    password = "".join(random.choices(wanted, k=length))
     return password
+
 
 password = create_password()
 print("Your new password is: \t\t" + password)
